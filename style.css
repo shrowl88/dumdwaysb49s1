@@ -28,7 +28,9 @@ section {
     
 }
 .icon {
-    font-size: 40px
+    font-size: 40px;
+    margin-left: 15px; color: black;
+
 }
 .card {
     
