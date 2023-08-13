@@ -4,8 +4,9 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   /* background-color: var(--second-bg-color); */
-  background: url(/image/bg-4.jpg) no-repeat;
+  background: url(/image/bg-6.jpg);
   background-size: cover;
+  height: 100vh;
 }
 
 :root {
@@ -13,12 +14,6 @@ body {
   --second-bg-color: #112e42;
   --text-color: #ededed;
   --main-color: #00abf0;
-}
-
-label{
-    font-size:large;
-    font-weight: bold;
-    color: orange;
 }
 
 /* navbar */
@@ -84,23 +79,14 @@ nav {
 /* Tutup Nav*/
 /* Content */
 
-input{
-    background-color: white;
-    padding: 0.8em;
-    border-radius: 0.4em;
-    border: none;
-    box-shadow: 0px 1.5px 2px;
-    margin-top: 0.5em;
-}
-
-.Project-Detail{
+.game-detail{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.Container-Detail{
+.container-detail{
     width: 80%;
     height: 80%;
     padding: 2em;
@@ -111,29 +97,28 @@ input{
     box-shadow: 0px 0px 10px;
 }
 
-.Description-Detail p{
+.description-detail p{
     margin-top: 2em;
     color: white;
     text-align: justify;
 }
 
-.Container-Detail h1{
+.container-detail h1{
     text-align: center;
     margin-bottom: 1em;
     background-color: var(--main-color);
 }
 
-.Detail-image{
+.detail-image{
     display: flex;
     width: 100%;
 }
 
 
-.card-image{
+/* .card-image{
     width: 60%;
     height: 450px;
-    background-color: red;
-}
+} */
 
 .card-image img{
     object-fit: cover;
@@ -143,18 +128,17 @@ input{
 
 .card-duration{
     margin-left: 3em;
-    margin-top: 2em;
     height: auto;
     color: white;
+    font-size: 1em;
 }
 
-.date{
+.date {
     display: flex;
     align-items: center;
-    margin-top: 1em;
 }
 
-.date i{
+.date i {
     margin-right: 1em;
 }
 
@@ -168,39 +152,40 @@ input{
     margin-right: 0.8em;
 }
 
-.card-DT{
+.card {
     display: flex;
     flex-direction: column;
     width: 40%;
     height: auto;
+    font-size: 1em;
 }
 
-.card-teknologi{
+.card-game{
     margin-left: 3em;
     margin-top: 5em;
     height: auto;
     color: white;
 }
 
-.grid-tecnologies{
+.grid-game{
     display: grid;
     grid-template-columns: auto auto;
 }
 
-.tecnologies{
+.game{
     display: flex;
     margin-top: 2em;
     align-items: center;
 }
 
-.tecnologies i{
-    margin-right: 0.5em;
+.game i{
+    margin-right: 0.8em;
     color: var(--text-color);
 }
 
-.tecnologies p{
+.game p{
     color: var(--text-color);
-    font-weight: bold;
+    font-weight: 500;
 }
 
 hr {
