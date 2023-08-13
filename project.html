@@ -1,0 +1,180 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="icon" href="image/icon-web.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <img src="image/icon/icon-bg.png" alt="Logo">
+                </li>
+                <li>
+                    <a href="index.html"><strong>Home</strong></a>
+                </li>
+                <li>
+                    <a href="project.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">Contact Me</a>
+        </div>
+    </nav>
+    <!-- tutup navbar -->
+
+    <!-- Form -->
+    <section class="form">
+      <form class="form-container" id="Form-Project" onsubmit="addBlog(event)">
+        <div class="container">
+          <h1>ADD MY PROJECT</h1>
+          <div class="Project-name">
+            <label for="input-projectname">Project Name</label>
+            <input id="input-projectname" type="text" required>
+          </div>
+          
+          <!-- Date --> 
+          <div class="date-container">
+            <div>
+              <label>Start Date</label>
+              <input type="date" id="input-startdate" required>
+            </div>
+            <div>
+              <label>End Date</label>
+              <input id="input-endDate" type="date" required>
+              </div>
+            </div>
+            
+            <!-- Description --> 
+            <div class="descripton-container">
+              <label>Descripton</label>
+              <textarea id="input-descripton" required></textarea>
+            </div>
+            
+            
+            <!-- Checkbox --> 
+            <div class="checkbox">
+              <label>Technologies</label>
+              <div class="checkbox-group">
+                <div>
+                  <input type="checkbox" id="input-nodejs" class="multi-input" />
+                  <label>Node JS</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="input-golang" class="multi-input" />
+                  <label>Golang</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="input-reactjs" class="multi-input" />
+                  <label>React JS</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="input-javascript" class="multi-input"/>
+                  <label>Javascript</label>
+                </div>
+              </div>
+        </div>
+        
+        <!-- Upload Image --> 
+        <div class="upload-image">
+          <label>Upload Image</label>
+          <label for="input-image">
+            <div class="input-image">
+              <div class="file">Choose</div>
+              <i style="margin-right: 5px;" class='bx bx-paperclip'></i>
+              <input type="file" name= "input-image" id="input-image" hidden />
+            </div>
+          </label>
+        </div>
+        <button>Submit</button>
+      </div>
+    </form>
+  </section>
+    <hr>
+
+    <section>
+      <div id="content">
+        <div class="container-card">
+          <img src="image/gprox.jpg"/>
+          <a href="project-detail.html"><h3>Logitech G Pro X Superlight</h3></a>
+      <span>Duration : 1 Month </span>
+      <div class="Post">
+          <p>Post : 9 July 2023 | 08:39</p>
+          <span>1 Hours Ago..</span>
+      </div>
+      <div class="programming-language">
+          <i class="fa-brands fa-js" id="javascript"></i>
+          <i class="fa-brands fa-golang" id="golang"></i>
+          <i class="fa-brands fa-react" id="reactsJS"></i>
+          <i class="fa-brands fa-java" id="java"></i>
+      </div>
+      <hr>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
+      </p>
+      <div class="btn-group">
+          <button>Edit</button>
+          <button>Delete</button>
+      </div>
+      </div>
+      <div class="container-card">
+        <img src="image/monitor360.jpg"/>
+        <a href="project-detail.html"><h3>Monitor G-SYNC 360Hz ASUS ROG</h3></a>
+    <span>Duration : 2 Month</span>
+    <div class="Post">
+        <p>Post : 8 july 2023 | 11:55</p>
+        <span>2 Days ago..</span>
+    </div>
+    <div class="programming-language">
+        <i class="fa-brands fa-js" id="javascript"></i>
+        <i class="fa-brands fa-golang" id="golang"></i>
+        <i class="fa-brands fa-react" id="reactsJS"></i>
+        <i class="fa-brands fa-java" id="java"></i>
+    </div>
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
+    </p>
+    <div class="btn-group">
+        <button>Edit</button>
+        <button>Delete</button>
+    </div>
+    </div>
+    <div class="container-card">
+      <img src="image/rogstrix.png"/>
+      <a href="project-detail.html"><h3>ASUS ROG Zephyrus M16</h3></a>
+  <span>Duration : 3 Month</span>
+  <div class="Post">
+      <p>Post : 4 july 2023 | 16:55</p>
+      <span>3 Days ago..</span>
+  </div>
+  <div class="programming-language">
+      <i class="fa-brands fa-js" id="javascript"></i>
+      <i class="fa-brands fa-golang" id="golang"></i>
+      <i class="fa-brands fa-react" id="reactsJS"></i>
+      <i class="fa-brands fa-java" id="java"></i>
+  </div>
+  <hr>
+  <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
+  </p>
+  <div class="btn-group">
+      <button>Edit</button>
+      <button>Delete</button>
+  </div>
+  </div>
+  
+    </section>
+
+  </body>
+  <script src="js/project.js"></script>
+</html>

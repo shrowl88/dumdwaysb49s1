@@ -5,6 +5,7 @@ function submitData() {
     let subject = document.getElementById("input-subject").value;
     let message = document.getElementById("input-message").value;
 
+    //console.log(name)
     if (name == "") {
         return alert ("Nama wajib diisi!");
     } else if (email =="") {

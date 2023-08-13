@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/icon-web.jpg">
 <body>
     <!-- Navbar -->
     <nav>
         <div class="nav-left">
             <ul>
                 <li>
-                    <img src="image/dumbways.png" alt="Logo">
+                    <img src="image/icon/icon-bg.png" alt="Logo">
                 </li>
                 <li>
                     <a href="index.html"><strong>Home</strong></a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="project.html">My Project</a>
                 </li>
             </ul>
         </div>
@@ -29,7 +30,7 @@
 
     <!-- contact me -->
     <h2>GET IN TOUCH</h2>
-    <form>
+    <form class="kartu-form">
         <div>
           <label for="input-name">Name</label>
           <input height="500" type="text" id="input-name" placeholder="Your Name" required />
@@ -60,11 +61,11 @@
           <textarea rows="5" cols="10" id="input-message" placeholder="Your Message" ></textarea>
         </div>
   
-        <div>
+        <div class="bungkus-button">
           <button type="button" onclick="submitData()" class="submits">Submit</button>
         </div>
       </form> 
     <!-- tutup contact me -->
-    <script src="contact.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
