@@ -27,7 +27,7 @@
             </ul>
         </div>
         <div class="nav-right">
-            <a href="index.html">Contact Me</a>
+            <a href="contact.html">Contact Me</a>
         </div>
     </nav>
     <!-- tutup navbar -->
@@ -36,10 +36,10 @@
     <section class="form">
       <form class="form-container" id="Form-Project" onsubmit="addBlog(event)">
         <div class="container">
-          <h1>ADD MY PROJECT</h1>
+          <h1>ADD NEW GAME</h1>
           <div class="Project-name">
-            <label for="input-projectname">Project Name</label>
-            <input id="input-projectname" type="text" required>
+            <label for="input-gamename">Game Name</label>
+            <input id="input-gamename" type="text" required>
           </div>
           
           <!-- Date --> 
@@ -63,23 +63,23 @@
             
             <!-- Checkbox --> 
             <div class="checkbox">
-              <label>Technologies</label>
+              <label>Categories</label>
               <div class="checkbox-group">
                 <div>
-                  <input type="checkbox" id="input-nodejs" class="multi-input" />
-                  <label>Node JS</label>
+                  <input type="checkbox" id="input-fps" class="multi-input" />
+                  <label>FPS Game</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="input-golang" class="multi-input" />
-                  <label>Golang</label>
+                  <input type="checkbox" id="input-advanture" class="multi-input" />
+                  <label>Advanture</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="input-reactjs" class="multi-input" />
-                  <label>React JS</label>
+                  <input type="checkbox" id="input-simulator" class="multi-input" />
+                  <label>Simulator</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="input-javascript" class="multi-input"/>
-                  <label>Javascript</label>
+                  <input type="checkbox" id="input-fight" class="multi-input"/>
+                  <label>Fighting Games</label>
                 </div>
               </div>
         </div>
@@ -95,7 +95,7 @@
             </div>
           </label>
         </div>
-        <button>Submit</button>
+        <button>Add Game</button>
       </div>
     </form>
   </section>
@@ -104,77 +104,147 @@
     <section>
       <div id="content">
         <div class="container-card">
-          <img src="image/gprox.jpg"/>
-          <a href="project-detail.html"><h3>Logitech G Pro X Superlight</h3></a>
-      <span>Duration : 1 Month </span>
+          <img src="image/valo.webp"/>
+          <a href="project-detail.html"><h3>Valorant</h3></a>
+      <span>Release Date : 1 Month </span>
+      <div class="programming-language">
+        <i class="fa-solid fa-gamepad" id="javascript"></i>
+        <i class="fa-solid fa-gun" id="golang"></i>
+        <i class="fa-solid fa-shield-halved" id="reactsJS"></i>
+        <i class="fa-regular fa-keyboard" id="java"></i>
+      </div>
+      <hr>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
+      </p>
       <div class="Post">
           <p>Post : 9 July 2023 | 08:39</p>
           <span>1 Hours Ago..</span>
       </div>
-      <div class="programming-language">
-          <i class="fa-brands fa-js" id="javascript"></i>
-          <i class="fa-brands fa-golang" id="golang"></i>
-          <i class="fa-brands fa-react" id="reactsJS"></i>
-          <i class="fa-brands fa-java" id="java"></i>
-      </div>
-      <hr>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
-      </p>
       <div class="btn-group">
           <button>Edit</button>
           <button>Delete</button>
       </div>
       </div>
       <div class="container-card">
-        <img src="image/monitor360.jpg"/>
-        <a href="project-detail.html"><h3>Monitor G-SYNC 360Hz ASUS ROG</h3></a>
-    <span>Duration : 2 Month</span>
+        <img src="image/gta6.jpg"/>
+        <a href="project-detail.html"><h3>Grand Theft Auto VI</h3></a>
+    <span>Release Date : 2 Month</span>
+    <div class="programming-language">
+      <i class="fa-solid fa-gamepad" id="javascript"></i>
+      <i class="fa-solid fa-gun" id="golang"></i>
+      <i class="fa-solid fa-shield-halved" id="reactsJS"></i>
+      <i class="fa-regular fa-keyboard" id="java"></i>
+    </div>
+    <hr>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
+    </p>
     <div class="Post">
         <p>Post : 8 july 2023 | 11:55</p>
         <span>2 Days ago..</span>
     </div>
-    <div class="programming-language">
-        <i class="fa-brands fa-js" id="javascript"></i>
-        <i class="fa-brands fa-golang" id="golang"></i>
-        <i class="fa-brands fa-react" id="reactsJS"></i>
-        <i class="fa-brands fa-java" id="java"></i>
-    </div>
-    <hr>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
-    </p>
     <div class="btn-group">
         <button>Edit</button>
         <button>Delete</button>
     </div>
     </div>
     <div class="container-card">
-      <img src="image/rogstrix.png"/>
-      <a href="project-detail.html"><h3>ASUS ROG Zephyrus M16</h3></a>
-  <span>Duration : 3 Month</span>
+      <img src="image/ghostrecon.jpg"/>
+      <a href="project-detail.html"><h3>Ghost Recon®: Breakpoint</h3></a>
+  <span>Release Date : 3 Month</span>
+  <div class="programming-language">
+    <i class="fa-solid fa-gamepad" id="javascript"></i>
+    <i class="fa-solid fa-gun" id="golang"></i>
+    <i class="fa-solid fa-shield-halved" id="reactsJS"></i>
+    <i class="fa-regular fa-keyboard" id="java"></i>
+  </div>
+  <hr>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
+  </p>
   <div class="Post">
       <p>Post : 4 july 2023 | 16:55</p>
       <span>3 Days ago..</span>
   </div>
-  <div class="programming-language">
-      <i class="fa-brands fa-js" id="javascript"></i>
-      <i class="fa-brands fa-golang" id="golang"></i>
-      <i class="fa-brands fa-react" id="reactsJS"></i>
-      <i class="fa-brands fa-java" id="java"></i>
-  </div>
-  <hr>
-  <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
-  </p>
   <div class="btn-group">
       <button>Edit</button>
       <button>Delete</button>
   </div>
   </div>
-  
-    </section>
 
+  <div class="container-card">
+    <img src="image/Counter-Strike-2.webp"/>
+    <a href="project-detail.html"><h3>Counter-Strike 2</h3></a>
+<span>Release Date : 3 Month</span>
+<div class="programming-language">
+  <i class="fa-solid fa-gamepad" id="javascript"></i>
+  <i class="fa-solid fa-gun" id="golang"></i>
+  <i class="fa-solid fa-shield-halved" id="reactsJS"></i>
+  <i class="fa-regular fa-keyboard" id="java"></i>
+</div>
+<hr>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
+</p>
+<div class="Post">
+    <p>Post : 4 july 2023 | 16:55</p>
+    <span>3 Days ago..</span>
+</div>
+<div class="btn-group">
+    <button>Edit</button>
+    <button>Delete</button>
+</div>
+</div>
+
+<div class="container-card">
+  <img src="image/Rainbow-Six.jpg"/>
+  <a href="project-detail.html"><h3>Tom Clancy's Rainbow Six Siege</h3></a>
+<span>Release Date : 3 Month</span>
+<div class="programming-language">
+<i class="fa-solid fa-gamepad" id="javascript"></i>
+<i class="fa-solid fa-gun" id="golang"></i>
+<i class="fa-solid fa-shield-halved" id="reactsJS"></i>
+<i class="fa-regular fa-keyboard" id="java"></i>
+</div>
+<hr>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
+</p>
+<div class="Post">
+  <p>Post : 4 july 2023 | 16:55</p>
+  <span>3 Days ago..</span>
+</div>
+<div class="btn-group">
+  <button>Edit</button>
+  <button>Delete</button>
+</div>
+</div>
+  
+<div class="container-card">
+  <img src="image/cod.jpg"/>
+  <a href="project-detail.html"><h3>Call of Duty: WWII</h3></a>
+<span>Release Date : 3 Month</span>
+<div class="programming-language">
+<i class="fa-solid fa-gamepad" id="javascript"></i>
+<i class="fa-solid fa-gun" id="golang"></i>
+<i class="fa-solid fa-shield-halved" id="reactsJS"></i>
+<i class="fa-regular fa-keyboard" id="java"></i>
+</div>
+<hr>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere cupiditate similique nesciunt id quibusdam in totam deleniti, asperiores, animi delectus nobis nisi? Sapiente fugiat, fugit illo harum minima deleniti.
+</p>
+<div class="Post">
+  <p>Post : 4 july 2023 | 16:55</p>
+  <span>3 Days ago..</span>
+</div>
+<div class="btn-group">
+  <button>Edit</button>
+  <button>Delete</button>
+</div>
+</div>
+    </section>
   </body>
   <script src="js/project.js"></script>
 </html>

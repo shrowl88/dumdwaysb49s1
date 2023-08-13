@@ -2,11 +2,19 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
   /* background-color: var(--second-bg-color); */
-  background: url(/image/bg-4.jpg) no-repeat;
+  background: url(/image/bg-6.jpg);
   background-size: cover;
+  height: 100vh;
+
 }
+
+.background {
+
+}
+
 
 :root {
   --bg-color: #081b29;
@@ -96,12 +104,13 @@ label{
   margin-top: 2em;
   margin-bottom: 2em;
   border-radius: 1.5em;
-  border:5px solid var(--second-bg-color);
+  border:2px solid var(--second-bg-color);
+  backdrop-filter: blur(20px);
   transition: .5s;
 }
 
 .container:hover {
-  border: 5px solid var(--main-color);
+  border: 2px solid var(--main-color);
   box-shadow: 0 0 20px var(--main-color), inset 0 0 20px var(--main-color);
 }
 
@@ -126,11 +135,6 @@ input, textarea {
   margin-top: 6px;
   color: #fff;
   transition: .5s;
-}
-
-.container:hover input textarea {
-  border: 2px solid red;
-  box-shadow: 0 0 20px red, inset 0 0 20px red;
 }
 
 .project-name {
@@ -176,9 +180,9 @@ input, textarea {
   height: 150px;
 }
 
-.descripton-container:hover textarea {
+/* .descripton-container:hover textarea {
   color: var(--main-color);
-}
+} */
 
 .checkbox {
   margin-top: 1em;
@@ -310,11 +314,15 @@ input, textarea {
 }
 
 .container-card h3{
-  background-color: var(--main-color);
-  text-align: center;
+  background-color: transparent;
+  color: var(--text-color);
   border-radius: 0.2em;
   margin-bottom: 0.5em;
   margin-top: 0.3em;
+}
+
+.container-card h3:hover {
+  color: var(--main-color);
 }
 
 .container-card img {
@@ -325,6 +333,7 @@ input, textarea {
 }
 .container-card span{
   color: white;
+  font-size: small;
 }
 
 .container-card p {
@@ -348,6 +357,7 @@ input, textarea {
 .Post {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .Post span{
@@ -357,7 +367,8 @@ input, textarea {
 }
 
 .programming-language i {
-  font-size: 1.7em;
+  font-size: 1em;
+  margin-top: 0.5em;
   margin-right: 0.5em;
   margin-bottom: 0.5em;
   color: white;
@@ -378,13 +389,12 @@ input, textarea {
 }
 
 .btn-group button:hover {
-  background-color: #333;
-  color: white;
+  color: var(--main-color);
   cursor: pointer;
 }
 
 .container-card:hover{
-  box-shadow: 0px 0px 10px cyan;
+  box-shadow: 0px 0px 10px var(--main-color);
 }
 
 

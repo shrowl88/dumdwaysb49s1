@@ -9,10 +9,10 @@ function addBlog(event) {
     let startDate = document.getElementById("input-startdate").value;
     let endDate = document.getElementById("input-endDate").value;
     let description = document.getElementById("input-descripton").value;
-    let nodejs = document.getElementById("input-nodejs").checked;
-    let golang = document.getElementById("input-golang").checked;
-    let reactjs = document.getElementById("input-reactjs").checked;
-    let javascript = document.getElementById("input-javascript").checked;
+    let fps = document.getElementById("input-fps").checked;
+    let advanture = document.getElementById("input-advanture").checked;
+    let simulator = document.getElementById("input-simulator").checked;
+    let fight = document.getElementById("input-fight").checked;
     let file = document.getElementById("input-image").files;
     let getimage = document.getElementById("input-image").value;
 
@@ -63,25 +63,25 @@ function addBlog(event) {
     }
 
     
-    let technologies = [];
+    let Categories = [];
     
-    if (nodejs) {
-        technologies.push('<i class="fa-brands fa-js" id="javascript"></i>');
+    if (fps) {
+        Categories.push('<i class="fa-solid fa-gamepad" id="javascript"></i>');
     }
     
-    if (golang) {
-        technologies.push('<i class="fa-brands fa-golang" id="golang"></i>');
+    if (advanture) {
+        Categories.push('<i class="fa-solid fa-gun" id="golang"></i>');
     }
 
-    if (reactjs) {
-        technologies.push('<i class="fa-brands fa-react" id="reactsJS"></i>');
+    if (simulator) {
+        Categories.push('<i class="fa-solid fa-shield-halved" id="reactsJS"></i>');
     }
 
-    if (javascript) {
-        technologies.push('<i class="fa-brands fa-java" id="java"></i>');
+    if (fight) {
+        Categories.push('<i class="fa-regular fa-keyboard" id="java"></i>');
     }
     
-    let technologiesHTML = technologies.join('');
+    let CategoriesHTML = Categories.join('');
     
 
   // TAKE THE VALUE OF IMAGES
@@ -94,7 +94,7 @@ function addBlog(event) {
         projectName,
         duration,
         description,
-        technologiesHTML,
+        CategoriesHTML,
         durationPost : new Date()
     };
     
@@ -134,7 +134,7 @@ function renderBlog() {
         document.getElementById("content").innerHTML += 
         `<div class="container-card">
                     <a href="project-detail.html"><img src= ${dataBlog[i].image} alt=""/></a>
-                <h3>GET ACE</h3>
+                <h3></h3>
                 <span>Durasi : ${dataBlog[i].duration}</span>
                 <div class="Post">
                 <p>${convertdate(dataBlog[i].durationPost)}</p>
@@ -145,7 +145,7 @@ function renderBlog() {
                 ${dataBlog[i].description}
             </p>
             <div class="programming-language">
-                ${dataBlog[i].technologiesHTML}
+                ${dataBlog[i].CategoriesHTML}
             </div>
                 <div class="btn-group">
                     <button>Edit</button>
